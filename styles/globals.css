@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Orbitron:wght@400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dojo-dark text-dojo-light-blue font-inter;
+  overflow-x: hidden;
+}
+
+/* Custom glow text class */
+.text-glow {
+  text-shadow: 0 0 5px #a8cfff, 0 0 10px #00f6ff, 0 0 15px #00f6ff;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #101a35;
+}
+::-webkit-scrollbar-thumb {
+  background: #7e57c2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f6ff;
+}
